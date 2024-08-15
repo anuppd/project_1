@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap");
+
+:root {
+    --main-color: #ec9735;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Signika", sans-serif;
+}
+
+nav {
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-bar {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 25px;
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+.logo span {
+    color: blue;
+}
+
+.nav-bar ul {
+    list-style: none;
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    color: rgb(112, 108, 108);
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.nav-bar > div:last-child {
+    width: 17%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-bar > div:last-child > button {
+    width: 35px;
+    height: 30px;
+    background-color: white;
+    border: 2px solid rgb(200, 187, 187);
+    border-radius: 5px;
+}
+
+.hero {
+    width: 100vw;
+    height: 92vh;
+}
+
+.product {
+    height: 85%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.product_div {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.description {
+    width: 30%;
+}
+
+.description > h1 {
+    font-size: 3.9rem;
+}
+
+.description > h1 > span {
+    color: var(--main-color);
+}
+
+.description > p {
+    color: rgb(86, 86, 87);
+    font-size: 0.8rem;
+    line-height: 20px;
+}
+
+.description > a > button {
+    width: 50%;
+    height: 5.4vh;
+    border: none;
+    border-radius: 2vh;
+    margin-top: 10px;
+    background-color: black;
+    color: azure;
+    cursor: pointer;
+}
+
+.description > a > button:hover {
+    background-color: var(--main-color);
+    transition: 0.1s ease-in;
+}
+
+.product-img {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-img > img {
+    height: 75vh;
+}
+
+.product-img > img:hover {
+    transform: scale(1.2);
+    transition: 0.2s;
+}
+
+.reviews {
+    height: 15%;
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+}
+
+.reviews-card-wrapper {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.reviews-card {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.card > .icon {
+    color: aliceblue;
+}
+
+.card > .icon-details {
+    line-height: 25px;
+    color: aliceblue;
+}
+
+.icon-details > h3 {
+    font-size: 1.5rem;
+}

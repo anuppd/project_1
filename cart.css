@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap");
+
+:root {
+    --main-color: #ec9735;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Signika", sans-serif;
+}
+
+nav {
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-bar {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 25px;
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+.logo span {
+    color: blue;
+}
+
+.nav-bar ul {
+    list-style: none;
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    color: rgb(112, 108, 108);
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.nav-bar > div:last-child {
+    width: 17%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-bar > div:last-child > button {
+    width: 35px;
+    height: 30px;
+    background-color: white;
+    border: 2px solid rgb(200, 187, 187);
+    border-radius: 5px;
+}
+
+section {
+    height: 92vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cart-wrapper {
+    height: 92%;
+    width: 80%;
+}
+
+.cart-wrapper > h1 {
+    padding: 5vh 0;
+}
+
+.cart-wrapper > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-items {
+    width: 60%;
+}
+
+.cart-items > table {
+    width: 95%;
+}
+
+.header {
+    color: #a1a2a3;
+    font-size: small;
+}
+
+.header > th {
+    font-weight: 500;
+    padding: 1.1rem 0;
+    border-bottom: 1px solid gainsboro;
+    text-align: start;
+}
+
+tr > td {
+    padding: 1.1rem 0;
+}
+
+.grand-total {
+    width: 35%;
+}
+
+.grand-total > .coupon {
+    margin-bottom: 3vh;
+}
+
+.grand-total > .coupon > h5 {
+    padding: 1.1rem 0 0.5rem 0;
+}
+
+.grand-total > .coupon > input[type="text"] {
+    height: 2.5rem;
+    width: 45%;
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+    margin-bottom: 1.1rem;
+    padding-left: 0.7rem;
+}
+
+.grand-total > .coupon > input[type="submit"] {
+    height: 2.5rem;
+    width: 30%;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(4, 226, 226);
+}
+
+.grand-total > .coupon > input[type="submit"]:hover {
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}
+
+.grand-total > .price {
+    width: 76%;
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.7rem;
+}
+
+.price > div > p {
+    color: #a1a2a3;
+    font-size: 0.85rem;
+}
+
+.price > div > .total {
+    font-size: 1rem;
+    color: black;
+    font-weight: bold;
+}
+
+.grand-total > a > button {
+    width: 76%;
+    height: 7vh;
+    margin-top: 5vh;
+    background-color: var(--main-color);
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    border-radius: 1.3rem;
+    cursor: pointer;
+}
+
+.grand-total > a > button:hover {
+    background-color: black;
+    transition: 0.5s;
+}
+
+.secure-logos {
+    width: 76%;
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.secure-logos > img {
+    height: 5vh;
+}
+
+.continueShopping{
+    width: 80%;
+    height: 8%;
+    display: flex;
+    align-items: center;
+}
+
+.continueShopping > a > button {
+    background-color: white;
+    border: none;
+    font-size: 1.1rem;
+}
+
+.continueShopping > a > button:hover {
+    transform: translate(-10px);
+    transition: 0.5s;
+}

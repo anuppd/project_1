@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap");
+
+:root {
+    --main-color: #ec9735;
+}
+
+::placeholder {
+    color: rgb(182, 181, 181);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Signika", sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.payment,
+.summary {
+    width: 50%;
+}
+
+.payment > h3 {
+    color: rgb(138, 141, 141);
+    margin-bottom: 1.3rem;
+}
+
+.payment > h2 {
+    margin-bottom: 0.7rem;
+}
+
+label {
+    padding-bottom: 2rem;
+}
+
+input {
+    height: 2.5rem;
+    width: 60%;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(236, 234, 234);
+    font-size: large;
+    margin-top: 0.3rem;
+    padding-left: 0.3rem;
+}
+
+input[type="email"] {
+    margin-bottom: 2.8rem;
+}
+
+.payment-details {
+    width: 70%;
+    border: 1px solid rgb(235, 232, 232);
+    border-radius: 12px;
+    padding: 1rem;
+}
+
+.payment-details > .payment-methods {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2px;
+    margin-bottom: 1.2rem;
+}
+
+.payment-methods > p {
+    width: 6rem;
+    border: 1px solid rgb(184, 182, 182);
+    border-radius: 8px;
+    padding: 1rem;
+    transform: scale(1.2);
+    margin-bottom: 1.2rem;
+}
+
+.payment-methods > p:first-child {
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+}
+
+.bank-details, .bank-details > form {
+    width: 100%;
+}
+
+.w-100 {
+    width: 90%;
+}
+
+.bank-details > form > input {
+    margin-bottom: 1.2rem;
+}
+
+.sub-wrapper {
+    display: flex;
+}
+
+.sub-wrapper > div:first-child {
+    width: 50%;
+}
+
+.sub-wrapper > div:last-child {
+    width: 50%;
+}
+
+.sub-wrapper > div > input {
+    width: 80%;
+    margin: 0.3rem 0 1.2rem 0;
+}
+
+.country > select {
+    width: 80%;
+    height: 2.5rem;
+    margin-top: 0.3rem;
+}
+
+.summary > h1 {
+    margin-bottom: 5rem;
+}
+
+.grand-total {
+    width: 80%;
+}
+
+.grand-total > .coupon {
+    margin-bottom: 3vh;
+}
+
+.grand-total > .coupon > h5 {
+    padding: 1.1rem 0 0.5rem 0;
+}
+
+.grand-total > .coupon > input[type="text"] {
+    height: 2.5rem;
+    width: 55%;
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+    margin-bottom: 1.1rem;
+    padding-left: 0.7rem;
+}
+
+.grand-total > .coupon > input[type="submit"] {
+    height: 2.5rem;
+    width: 28%;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(4, 226, 226);
+}
+
+.grand-total > .coupon > input[type="submit"]:hover {
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}
+
+.grand-total > .price {
+    width: 84%;
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.7rem;
+}
+
+.price > div > p {
+    color: #a1a2a3;
+    font-size: 0.85rem;
+}
+
+.price > div > .total {
+    font-size: 1rem;
+    color: black;
+    font-weight: bold;
+}
+
+.grand-total > a > button {
+    width: 84%;
+    height: 7vh;
+    margin-top: 5vh;
+    background-color: var(--main-color);
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    border-radius: 1.3rem;
+    cursor: pointer;
+}
+
+.grand-total > a > button:hover {
+    background-color: black;
+    transition: 0.5s;
+}
+
+.secure-logos {
+    width: 76%;
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.secure-logos > img {
+    height: 5vh;
+}
